@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.windbridget.w_videoplayer.SignUp"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:text="Sign up and come with us !"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_lg_title"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Name : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_su_name"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Your Name"
+                android:ems="10"
+                android:id="@+id/m_su_name" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Username : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_su_user_name"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Your username"
+                android:ems="10"
+                android:id="@+id/m_su_user_name" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Password : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_su_password"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:hint="Your password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/m_su_password"
+                android:textScaleX="0.8" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="Confirm Password : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_su_cf_password"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:hint="Confirm password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/m_su_cf_password"
+                android:textScaleX="0.8" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <Button
+            android:text="SIGN UP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_singup"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

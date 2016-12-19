@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.windbridget.w_videoplayer.History"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:text="Your history !"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_his_title"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp" />
+
+    <ListView
+        android:id="@+id/list_history_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        ></ListView>
+</LinearLayout>

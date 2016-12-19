@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.windbridget.w_videoplayer.Login"
+    android:padding="15dp">
+
+    <TextView
+        android:text="Please login to enter FUNix world !"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_lg_title"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/background_light"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:text="USERNAME :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_user_name"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter your username"
+        android:ems="10"
+        android:id="@+id/m_user_name" />
+
+    <TextView
+        android:text="PASSWORD :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_password"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:hint="Enter your password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/m_password"
+        android:textScaleX="0.8" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <Button
+            android:text="LOGIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_orange_dark" />
+
+        <Button
+            android:text="REGISTER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_get_acc"
+            android:layout_weight="1"
+            android:layout_margin="15dp"
+            android:textColor="@android:color/background_light"
+            android:background="@android:color/holo_orange_dark" />
+
+    </LinearLayout>
+
+</LinearLayout>
